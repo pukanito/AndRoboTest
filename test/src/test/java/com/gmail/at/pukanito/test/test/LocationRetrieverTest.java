@@ -8,7 +8,8 @@ import org.robolectric.Robolectric;
 
 import android.app.Application;
 
-@Config(manifest = "src/main/AndroidManifest.xml")
+@Config(manifest = "src/main/AndroidManifest.xml",
+        reportSdk = 18, qualifiers = "v10")
 @RunWith(RobolectricTestRunner.class)
 public class LocationRetrieverTest {
 
