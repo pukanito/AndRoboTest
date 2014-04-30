@@ -9,7 +9,8 @@ import org.robolectric.Robolectric;
 import android.app.Application;
 
 @Config(manifest = "src/main/AndroidManifest.xml",
-        reportSdk = 18, qualifiers = "v10")
+        reportSdk = 18, qualifiers = "v10",
+        shadows = { ShadowResources.class })
 @RunWith(RobolectricTestRunner.class)
 public class LocationRetrieverTest {
 
